@@ -1,9 +1,8 @@
 const rotate = string => {
   array = string.split('')
-  
+
   for (var i = 0; i < array.length; i++) {
-    var pop = array.pop([array.length-1])
-    array.unshift(pop).toString()
+    array.unshift(array.pop())
     console.log(array.join(''))
   }
 }
